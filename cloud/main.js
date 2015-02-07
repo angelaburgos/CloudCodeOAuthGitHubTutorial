@@ -1,32 +1,29 @@
-/**
- * Login With GitHub
- *
- * An example web application implementing OAuth2 in Cloud Code
- *
- * There will be four routes:
- * / - The main route will show a page with a Login with GitHub link
- *       JavaScript will detect if it's logged in and navigate to /main
- * /authorize - This url will start the OAuth process and redirect to GitHub
- * /oauthCallback - Sent back from GitHub, this will validate the authorization
- *                    and create/update a Parse User before using 'become' to
- *                    set the user on the client side and redirecting to /main
- * /main - The application queries and displays some of the users GitHub data
- *
- * @author Fosco Marotto (Facebook) <fjm@fb.com>
- */
 
-/**
- * Load needed modules.
- */
-var express = require('express');
-var querystring = require('querystring');
-var _ = require('underscore');
-var Buffer = require('buffer').Buffer;
+ Login With GitHub
+ 
+  example web application implementing OAuth2 in Cloud Code
+ 
+ There will be four routes:
+ - e main route will show a page with a Login with GitHub link
+  JavaScript will detect if it's logged in and navigate to /main
+ uthorize - This url will start the OAuth process and redirect to GitHub
+ /hCallb- Sback from GitHub, this will validate the authorization
+      M nd create/update a Parse User before using 'become' to
+     s the user on the client side and redirecting to /main
+ ain - The application queries and displays some of the users GitHub data
 
-/**
- * Create an express application instance
- */
-var app = express();
+ uthor Fosco Marotto (Facebook) <m
+
+
+ ad needed modules.
+v express i('expres
+vaquystring ire('queryst
+varMm quire('unrscore'
+vaBuffer require('buffe).Buffer
+
+ Create an express application instan
+ 
+varpp es
 
 /**
  * GitHub specific details, including application id and secret
