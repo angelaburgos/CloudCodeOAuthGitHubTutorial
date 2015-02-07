@@ -1,6 +1,4 @@
-Adding Third-Party Authentication to your Web App
-=================================================
+Adding Third-Party Authentation to your Web App
 
-This project implements the OAuth2 process in Parse.com Cloud Code to enable "Login with GitHub" for a web app.
-
-Find more information [here](https://parse.com/tutorials/adding-third-party-authentication-to-your-web-app)
+This pro impltshOth2rocess in Parse.m Cloud Code to enable "gin with GitHubfor a web app
+Find more information eparse.mutorialsdding-third-partyuthentication-to-your-eb-ap
