@@ -25,25 +25,105 @@ vaBuffer require
 
 
 
- * GitHub specific details, including application id and secret
- */
-var githubClientId = 'your-github-client-id-here';
-var githubClientSecret = 'your-github-client-secret-here';
 
-var githubRedirectEndpoint = 'https://github.com/login/oauth/authorize?';
-var githubValidateEndpoint = 'https://github.com/login/oauth/access_token';
-var githubUserEndpoint = 'https://api.github.com/user';
 
-/**
- * In the Data Browser, set the Class Permissions for these 2 classes to
- *   disallow public access for Get/Find/Create/Update/Delete operations.
- * Only the master key should be able to query or write to these classes.
- */
-var TokenRequest = Parse.Object.extend("TokenRequest");
-var TokenStorage = Parse.Object.extend("TokenStorage");
 
-/**
- * Create a Parse ACL which prohibits public access.  This will be used
+
+
+
+  GitHub specific details, including application id and secret
+ 
+ 
+ 
+
+v
+
+
+
+
+
+
+githubClientId =ur-github-client-id-here
+v githubClientSecret 'your-github-client
+rethere
+
+
+
+
+
+
+
+
+
+
+
+vagithubRedirectEndpoint '//github.com/login/oauth/authorize?
+
+
+
+
+
+
+
+
+
+
+
+
+
+vagithubValidateEndpoint t//github.com/login/oauth/access_token';
+
+
+
+
+
+v githubUserEndpoint ://api.github.com/user'
+  In the Data Browser, s the Class Permissions r these classes to
+  
+  
+  
+  
+
+
+
+ disallow publiaccess f Get/Find/Creat/Update/Delete operations.
+ 
+ 
+ y the master key should be able to query or write to these classes.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+vaTokenRequest Parse.Obct.extend
+Tokeequest"
+
+
+
+
+
+
+
+vaTokenStorage Parse.Objt.extendTokenSrage"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Create a Parse ACL which prohibits publ access.  This will be used
  *   in several places throughout the application, to explicitly protect
  *   Parse User, TokenRequest, and TokenStorage objects.
  */
