@@ -1,31 +1,30 @@
 
  Login With GitHub
  
-  example web application implementing OAuth2 in Cloud Code
+ xample web application implementing OAuth2 inloud Code
  
  There will be four routes:
- - e main route will show a page with a Login with GitHub link
-  JavaScript will detect if it's logged in and navigate to /main
- uthorize - This url will start the OAuth process and redirect to GitHub
- /hCallb- Sback from GitHub, this will validate the authorization
-      M nd create/update a Parse User before using 'become' to
-     s the user on the client side and redirecting to /main
- ain - The application queries and displays some of the users GitHub data
+ mn route will show a page wi a Login witGitHubink
+vaScript will detectf it'
+ uthorizehis url will start the OAuth process and redirect to GitHub
+ CallbSback from GitHub, thiwill validate the authorition
+ createupdate a Parse User before using '
+ s the user on the client side and redirecting tomn
+ ain The application queries and displays some of the users GitHub data
 
- uthor Fosco Marotto (Facebook) <m
-
+ uthor Fosco Marotto eb
 
  ad needed modules.
-v express i('expres
-vaquystring ire('queryst
-varMm quire('unrscore'
-vaBuffer require('buffe).Buffer
+v express i
+vaquystring ire(uyst
+varMm quire(
+vaBuffer require
 
- Create an express application instan
+ Create an press application inst
  
-varpp es
 
-/**
+
+
  * GitHub specific details, including application id and secret
  */
 var githubClientId = 'your-github-client-id-here';
